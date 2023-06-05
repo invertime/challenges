@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile and run C",
+            "type": "shell",
+            "command": "gcc ${file} -o ${fileDirname}/${fileBasenameNoExtension}; ${fileDirname}/${fileBasenameNoExtension} ",
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
